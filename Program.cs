@@ -101,7 +101,7 @@ namespace ShoppingListApp
 
             if (int.TryParse(input, out int index))
             {
-                // Ellenőrizzük, hogy az index érvényes-e (1-től számolunk a felhasználónak)
+                // Ellenőrzi, hogy az index érvényes-e (1-től számol a felhasználónak)
                 if (index > 0 && index <= shoppingList.Count)
                 {
                     string removedItem = shoppingList[index - 1]; // Az index-1-re van szükség, mert a List 0-tól indexel
